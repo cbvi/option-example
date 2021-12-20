@@ -1,12 +1,10 @@
 with Ada.Text_IO;
-with Ada.Numerics.Discrete_Random;
 with Option;
 
 procedure Main
 is
    package IO renames Ada.Text_IO;
 
-   package Random is new Ada.Numerics.Discrete_Random (0 .. 1);
    package Integer_Option is new Option (Integer);
 
    function Get_Maybe return Integer_Option.Option
